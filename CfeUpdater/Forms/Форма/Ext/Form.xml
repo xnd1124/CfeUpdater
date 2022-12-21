@@ -73,14 +73,15 @@
 						</InputField>
 						<InputField name="ПараметрыКоманднойСтроки2Файла" id="101">
 							<DataPath>ПараметрыКоманднойСтроки2Файла</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ПараметрыКоманднойСтроки2ФайлаКонтекстноеМеню" id="102"/>
 							<ExtendedTooltip name="ПараметрыКоманднойСтроки2ФайлаРасширеннаяПодсказка" id="103"/>
 						</InputField>
-						<InputField name="ПараметрыКоманднойСтроки" id="98">
+						<InputField name="ПараметрыКоманднойСтроки3Файла" id="98">
 							<DataPath>ПараметрыКоманднойСтроки3Файла</DataPath>
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ПараметрыКоманднойСтрокиКонтекстноеМеню" id="99"/>
-							<ExtendedTooltip name="ПараметрыКоманднойСтрокиРасширеннаяПодсказка" id="100"/>
+							<ContextMenu name="ПараметрыКоманднойСтроки3ФайлаКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ПараметрыКоманднойСтроки3ФайлаРасширеннаяПодсказка" id="100"/>
 						</InputField>
 						<CheckBoxField name="УчитыватьПриСравненииНепечатаемыеСимволы" id="65">
 							<DataPath>УчитыватьПриСравненииНепечатаемыеСимволы</DataPath>
