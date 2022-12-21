@@ -147,7 +147,7 @@
 							<ContextMenu name="ФайлыОбновляемойКонфигурацииКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ФайлыОбновляемойКонфигурацииРасширеннаяПодсказка" id="9"/>
 							<Events>
-								<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
+								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
 							</Events>
 						</InputField>
 						<InputField name="ФайлыНовойКонфигурации" id="4">
@@ -158,7 +158,7 @@
 							<ContextMenu name="ФайлыНовойКонфигурацииКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="ФайлыНовойКонфигурацииРасширеннаяПодсказка" id="6"/>
 							<Events>
-								<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
+								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
@@ -190,7 +190,7 @@
 							<ContextMenu name="ФайлыРасширенияКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="ФайлыРасширенияРасширеннаяПодсказка" id="3"/>
 							<Events>
-								<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
+								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
