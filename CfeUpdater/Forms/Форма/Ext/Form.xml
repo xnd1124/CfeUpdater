@@ -7,7 +7,9 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаКнопки" id="17">
@@ -139,28 +141,99 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="20"/>
 					<ChildItems>
-						<InputField name="ФайлыОбновляемойКонфигурации" id="7">
-							<DataPath>ФайлыОбновляемойКонфигурации</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ФайлыОбновляемойКонфигурацииКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ФайлыОбновляемойКонфигурацииРасширеннаяПодсказка" id="9"/>
-							<Events>
-								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
-							</Events>
-						</InputField>
-						<InputField name="ФайлыНовойКонфигурации" id="4">
-							<DataPath>ФайлыНовойКонфигурации</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ФайлыНовойКонфигурацииКонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="ФайлыНовойКонфигурацииРасширеннаяПодсказка" id="6"/>
-							<Events>
-								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
-							</Events>
-						</InputField>
+						<UsualGroup name="ГруппаОбновляемая" id="104" DisplayImportance="VeryLow">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обновляемая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обновляемая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<HorizontalSpacing>Half</HorizontalSpacing>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбновляемаяРасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<InputField name="ФайлыОбновляемойКонфигурации" id="7">
+									<DataPath>ФайлыОбновляемойКонфигурации</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ФайлыОбновляемойКонфигурацииКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ФайлыОбновляемойКонфигурацииРасширеннаяПодсказка" id="9"/>
+									<Events>
+										<Event name="OnChange">ФайлыОбновляемойКонфигурацииПриИзменении</Event>
+										<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияФайлыОбновляемойКонфигурации" id="106">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>web:CornFlowerBlue</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание обновляемой конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<ContextMenu name="ДекорацияФайлыОбновляемойКонфигурацииКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ДекорацияФайлыОбновляемойКонфигурацииРасширеннаяПодсказка" id="108"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНоваяКонфигурация" id="109">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа новая конфигурация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа новая конфигурация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНоваяКонфигурацияРасширеннаяПодсказка" id="110"/>
+							<ChildItems>
+								<InputField name="ФайлыНовойКонфигурации" id="4">
+									<DataPath>ФайлыНовойКонфигурации</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ФайлыНовойКонфигурацииКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ФайлыНовойКонфигурацииРасширеннаяПодсказка" id="6"/>
+									<Events>
+										<Event name="OnChange">ФайлыНовойКонфигурацииПриИзменении</Event>
+										<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияФайлыНовойКонфигурации" id="111">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>web:CornFlowerBlue</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание новой конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<ContextMenu name="ДекорацияФайлыНовойКонфигурацииКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ДекорацияФайлыНовойКонфигурацииРасширеннаяПодсказка" id="113"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаКолонкаПраво" id="21">
@@ -182,17 +255,52 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="22"/>
 					<ChildItems>
-						<InputField name="ФайлыРасширения" id="1">
-							<DataPath>ФайлыРасширения</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ФайлыРасширенияКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="ФайлыРасширенияРасширеннаяПодсказка" id="3"/>
-							<Events>
-								<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
-							</Events>
-						</InputField>
+						<UsualGroup name="ГруппаФайлыРасширения" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файлы расширения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файлы расширения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФайлыРасширенияРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<InputField name="ФайлыРасширения" id="1">
+									<DataPath>ФайлыРасширения</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ФайлыРасширенияКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ФайлыРасширенияРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="OnChange">ФайлыРасширенияПриИзменении</Event>
+										<Event name="StartChoice">ПутьККаталогамНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияФайлыРасширения" id="116">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>web:CornFlowerBlue</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание расширения</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<ContextMenu name="ДекорацияФайлыРасширенияКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ДекорацияФайлыРасширенияРасширеннаяПодсказка" id="118"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -862,6 +970,60 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеФайлыОбновляемойКонфигурации" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание файлы обновляемой конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОписаниеФайлыОбновляемойКонфигурации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОписаниеФайлыНовойКонфигурации" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание файлы обновляемой конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОписаниеФайлыНовойКонфигурации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОписаниеФайлыРасширения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание файлы обновляемой конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ОписаниеФайлыРасширения</Field>
+			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
