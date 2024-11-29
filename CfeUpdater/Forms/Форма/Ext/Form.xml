@@ -37,6 +37,16 @@
 					<CommandName>Form.Command.Анализ</CommandName>
 					<ExtendedTooltip name="ФормаАнализРасширеннаяПодсказка" id="11"/>
 				</Button>
+				<Button name="Настройки" id="122">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Настройки</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture._ДемоРазделИнструментыРазработчика</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="123"/>
+				</Button>
 				<UsualGroup name="ГруппаНастройки" id="12" DisplayImportance="High">
 					<Title>
 						<v8:item>
@@ -519,6 +529,12 @@
 				<v8:Type>cfg:ExternalDataProcessorObject.АнализРасширенияПриОбновлении</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ПрограммаПросмотраИзменений</Field>
+				<Field>Объект.ПутьДоKDiff3</Field>
+				<Field>Объект.ПутьДоP4Merge</Field>
+				<Field>Объект.ПутьКGitMerge</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="ФайлыРасширения" id="2">
 			<Title>
@@ -1135,6 +1151,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Анализ</Action>
+		</Command>
+		<Command name="Настройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
 		</Command>
 	</Commands>
 </Form>
