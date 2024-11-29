@@ -14,7 +14,7 @@
 			<Button name="ФормаПерейтиКАнализуИзменений" id="36">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ПерейтиКАнализуИзменений</CommandName>
+				<CommandName>Form.Command.ОК</CommandName>
 				<ExtendedTooltip name="ФормаПерейтиКАнализуИзмененийРасширеннаяПодсказка" id="37"/>
 			</Button>
 			<Button name="ФормаОтмена" id="40">
@@ -128,6 +128,9 @@
 							<Hyperlink>true</Hyperlink>
 							<ContextMenu name="ПутьНеНайденКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ПутьНеНайденРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="Click">ПутьКПрограммеНажатие</Event>
+							</Events>
 						</LabelDecoration>
 						<LabelDecoration name="ПутьКорректен" id="22">
 							<Visible>false</Visible>
@@ -142,6 +145,9 @@
 							<Hyperlink>true</Hyperlink>
 							<ContextMenu name="ПутьКорректенКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ПутьКорректенРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="Click">ПутьКПрограммеНажатие</Event>
+							</Events>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -272,17 +278,17 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ПерейтиКАнализуИзменений" id="1">
+		<Command name="ОК" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти к анализу изменений</v8:content>
+					<v8:content>ОК</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти к анализу изменений</v8:content>
+					<v8:content>ОК</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПерейтиКАнализуИзменений</Action>

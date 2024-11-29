@@ -9,7 +9,6 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаКнопки" id="17">
@@ -47,70 +46,6 @@
 					</Picture>
 					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="123"/>
 				</Button>
-				<UsualGroup name="ГруппаНастройки" id="12" DisplayImportance="High">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Настройки</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа настройки</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<ChildrenAlign>None</ChildrenAlign>
-					<Behavior>PopUp</Behavior>
-					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="13"/>
-					<ChildItems>
-						<InputField name="ПутьКПрограммеСравнения" id="25">
-							<DataPath>ПутьКПрограммеСравнения</DataPath>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Путь к программе сравнения текстов (KDiff3, P4Merge и т.п.)</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ПутьКПрограммеСравненияКонтекстноеМеню" id="26"/>
-							<ExtendedTooltip name="ПутьКПрограммеСравненияРасширеннаяПодсказка" id="27"/>
-							<Events>
-								<Event name="OnChange">ПутьКПрограммеСравненияПриИзменении</Event>
-								<Event name="StartChoice">ПутьКФайламНачалоВыбора</Event>
-							</Events>
-						</InputField>
-						<InputField name="ПараметрыКоманднойСтроки2Файла" id="101">
-							<DataPath>ПараметрыКоманднойСтроки2Файла</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ПараметрыКоманднойСтроки2ФайлаКонтекстноеМеню" id="102"/>
-							<ExtendedTooltip name="ПараметрыКоманднойСтроки2ФайлаРасширеннаяПодсказка" id="103"/>
-						</InputField>
-						<InputField name="ПараметрыКоманднойСтроки3Файла" id="98">
-							<DataPath>ПараметрыКоманднойСтроки3Файла</DataPath>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ПараметрыКоманднойСтроки3ФайлаКонтекстноеМеню" id="99"/>
-							<ExtendedTooltip name="ПараметрыКоманднойСтроки3ФайлаРасширеннаяПодсказка" id="100"/>
-						</InputField>
-						<CheckBoxField name="УчитыватьПриСравненииНепечатаемыеСимволы" id="65">
-							<DataPath>УчитыватьПриСравненииНепечатаемыеСимволы</DataPath>
-							<TitleLocation>Right</TitleLocation>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Учитывать при сравнении текстов пробелы, переводы строк, табуляцию и т.д.</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="УчитыватьПриСравненииНепечатаемыеСимволыКонтекстноеМеню" id="66"/>
-							<ExtendedTooltip name="УчитыватьПриСравненииНепечатаемыеСимволыРасширеннаяПодсказка" id="67"/>
-						</CheckBoxField>
-					</ChildItems>
-				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКолонки" id="23">
@@ -593,24 +528,6 @@
 				<Field>ФайлыНовойКонфигурации</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ПутьКПрограммеСравнения" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Путь к программе сравнения текстов</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<Save>
-				<Field>ПутьКПрограммеСравнения</Field>
-			</Save>
-		</Attribute>
 		<Attribute name="РезультатыРазбора" id="6">
 			<Title>
 				<v8:item>
@@ -854,17 +771,6 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="УчитыватьПриСравненииНепечатаемыеСимволы" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Учитывать при сравнении непечатаемые символы</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="ДеревоРазбора" id="9">
 			<Title>
 				<v8:item>
@@ -972,42 +878,6 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ПараметрыКоманднойСтроки3Файла" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры командной строки для трех файлов</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<Save>
-				<Field>ПараметрыКоманднойСтроки3Файла</Field>
-			</Save>
-		</Attribute>
-		<Attribute name="ПараметрыКоманднойСтроки2Файла" id="11">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры командной строки для двух файлов</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<Save>
-				<Field>ПараметрыКоманднойСтроки2Файла</Field>
-			</Save>
-		</Attribute>
 		<Attribute name="РазделительНаКлиенте" id="12">
 			<Title>
 				<v8:item>
@@ -1082,6 +952,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Программа сравнения запущена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БылаОшибкаПриЗапускеГит" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Была ошибка при запуске гит</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
