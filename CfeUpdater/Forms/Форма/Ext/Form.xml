@@ -46,6 +46,12 @@
 					</Picture>
 					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="123"/>
 				</Button>
+				<Button name="Справка" id="166">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="167"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКолонки" id="23">
@@ -250,213 +256,289 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="ДеревоРазбора" id="68">
-			<Representation>Tree</Representation>
-			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<InitialTreeView>ExpandAllLevels</InitialTreeView>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>ДеревоРазбора</DataPath>
-			<ContextMenu name="ДеревоРазбораКонтекстноеМеню" id="69"/>
-			<AutoCommandBar name="ДеревоРазбораКоманднаяПанель" id="70"/>
-			<ExtendedTooltip name="ДеревоРазбораРасширеннаяПодсказка" id="71"/>
-			<SearchStringAddition name="ДеревоРазбораСтрокаПоиска" id="72">
-				<AdditionSource>
-					<Item>ДеревоРазбора</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоРазбораСтрокаПоискаКонтекстноеМеню" id="73"/>
-				<ExtendedTooltip name="ДеревоРазбораСтрокаПоискаРасширеннаяПодсказка" id="74"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ДеревоРазбораСостояниеПросмотра" id="75">
-				<AdditionSource>
-					<Item>ДеревоРазбора</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоРазбораСостояниеПросмотраКонтекстноеМеню" id="76"/>
-				<ExtendedTooltip name="ДеревоРазбораСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ДеревоРазбораУправлениеПоиском" id="78">
-				<AdditionSource>
-					<Item>ДеревоРазбора</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ДеревоРазбораУправлениеПоискомКонтекстноеМеню" id="79"/>
-				<ExtendedTooltip name="ДеревоРазбораУправлениеПоискомРасширеннаяПодсказка" id="80"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">ДеревоРазбораВыбор</Event>
-			</Events>
+		<Pages name="ЗакладкиФормы" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗакладкиФормыРасширеннаяПодсказка" id="125"/>
 			<ChildItems>
-				<CheckBoxField name="ДеревоРазбораОтметка" id="92">
-					<DataPath>ДеревоРазбора.Отметка</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ThreeState>true</ThreeState>
-					<ContextMenu name="ДеревоРазбораОтметкаКонтекстноеМеню" id="93"/>
-					<ExtendedTooltip name="ДеревоРазбораОтметкаРасширеннаяПодсказка" id="94"/>
-					<Events>
-						<Event name="OnChange">ДеревоРазбораОтметкаПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
-				<CheckBoxField name="ДеревоРазбораАвто" id="119">
-					<DataPath>ДеревоРазбора.Авто</DataPath>
-					<ReadOnly>true</ReadOnly>
+				<Page name="Проблемы" id="126">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проблемы</v8:content>
+						</v8:item>
+					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Возможно автообъединение</v8:content>
+							<v8:content>Проблемы</v8:content>
 						</v8:item>
 					</ToolTip>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ДеревоРазбораАвтоКонтекстноеМеню" id="120"/>
-					<ExtendedTooltip name="ДеревоРазбораАвтоРасширеннаяПодсказка" id="121"/>
-				</CheckBoxField>
-				<ColumnGroup name="Имя" id="84">
-					<ReadOnly>true</ReadOnly>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>InCell</Group>
-					<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="85"/>
+					<Picture>
+						<xr:Ref>StdPicture.AppearanceFlagRed</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<TitleDataPath>ДеревоРазбораПроблемыКоличество</TitleDataPath>
+					<ExtendedTooltip name="ПроблемыРасширеннаяПодсказка" id="127"/>
 					<ChildItems>
-						<PictureField name="ДеревоРазбораКартинка" id="86">
-							<DataPath>ДеревоРазбора.Картинка</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Метаданные\Метод</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<Width>1</Width>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>1</MaxWidth>
-							<HorizontalStretch>false</HorizontalStretch>
-							<ContextMenu name="ДеревоРазбораКартинкаКонтекстноеМеню" id="87"/>
-							<ExtendedTooltip name="ДеревоРазбораКартинкаРасширеннаяПодсказка" id="88"/>
-						</PictureField>
-						<InputField name="ДеревоРазбораИмя" id="81">
-							<DataPath>ДеревоРазбора.Имя</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>EnterOnInput</EditMode>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ContextMenu name="ДеревоРазбораИмяКонтекстноеМеню" id="82"/>
-							<ExtendedTooltip name="ДеревоРазбораИмяРасширеннаяПодсказка" id="83"/>
-						</InputField>
+						<Table name="ДеревоРазбораПроблемы" id="68">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоРазбораПроблемы</DataPath>
+							<ContextMenu name="ДеревоРазбораПроблемыКонтекстноеМеню" id="69"/>
+							<AutoCommandBar name="ДеревоРазбораПроблемыКоманднаяПанель" id="70"/>
+							<ExtendedTooltip name="ДеревоРазбораПроблемыРасширеннаяПодсказка" id="71"/>
+							<SearchStringAddition name="ДеревоРазбораПроблемыСтрокаПоиска" id="72">
+								<AdditionSource>
+									<Item>ДеревоРазбораПроблемы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораПроблемыСтрокаПоискаКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="ДеревоРазбораПроблемыСтрокаПоискаРасширеннаяПодсказка" id="74"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоРазбораПроблемыСостояниеПросмотра" id="75">
+								<AdditionSource>
+									<Item>ДеревоРазбораПроблемы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораПроблемыСостояниеПросмотраКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ДеревоРазбораПроблемыСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоРазбораПроблемыУправлениеПоиском" id="78">
+								<AdditionSource>
+									<Item>ДеревоРазбораПроблемы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораПроблемыУправлениеПоискомКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ДеревоРазбораПроблемыУправлениеПоискомРасширеннаяПодсказка" id="80"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоРазбораПроблемыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ДеревоРазбораОтметка" id="92">
+									<DataPath>ДеревоРазбораПроблемы.Отметка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ThreeState>true</ThreeState>
+									<ContextMenu name="ДеревоРазбораОтметкаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ДеревоРазбораОтметкаРасширеннаяПодсказка" id="94"/>
+									<Events>
+										<Event name="OnChange">ДеревоРазбораПроблемыОтметкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоРазбораАвто" id="119">
+									<DataPath>ДеревоРазбораПроблемы.Авто</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможно автообъединение</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоРазбораАвтоКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ДеревоРазбораАвтоРасширеннаяПодсказка" id="121"/>
+								</CheckBoxField>
+								<ColumnGroup name="Имя" id="84">
+									<ReadOnly>true</ReadOnly>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<PictureField name="ДеревоРазбораКартинка" id="86">
+											<DataPath>ДеревоРазбораПроблемы.Картинка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Метаданные\Метод</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>1</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДеревоРазбораКартинкаКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="ДеревоРазбораКартинкаРасширеннаяПодсказка" id="88"/>
+										</PictureField>
+										<InputField name="ДеревоРазбораИмя" id="81">
+											<DataPath>ДеревоРазбораПроблемы.Имя</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДеревоРазбораИмяКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ДеревоРазбораИмяРасширеннаяПодсказка" id="83"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоРазбораАннотация" id="95">
+									<DataPath>ДеревоРазбораПроблемы.Аннотация</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРазбораАннотацияКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ДеревоРазбораАннотацияРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ДеревоРазбораПроблема" id="89">
+									<DataPath>ДеревоРазбораПроблемы.Проблема</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоРазбораПроблемаКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ДеревоРазбораПроблемаРасширеннаяПодсказка" id="91"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</ColumnGroup>
-				<InputField name="ДеревоРазбораАннотация" id="95">
-					<DataPath>ДеревоРазбора.Аннотация</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоРазбораАннотацияКонтекстноеМеню" id="96"/>
-					<ExtendedTooltip name="ДеревоРазбораАннотацияРасширеннаяПодсказка" id="97"/>
-				</InputField>
-				<InputField name="ДеревоРазбораПроблема" id="89">
-					<DataPath>ДеревоРазбора.Проблема</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДеревоРазбораПроблемаКонтекстноеМеню" id="90"/>
-					<ExtendedTooltip name="ДеревоРазбораПроблемаРасширеннаяПодсказка" id="91"/>
-				</InputField>
+				</Page>
+				<Page name="Информация" id="128">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.AppearanceFlagYellow</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<TitleDataPath>ДеревоРазбораИнформацияКоличество</TitleDataPath>
+					<ExtendedTooltip name="ИнформацияРасширеннаяПодсказка" id="129"/>
+					<ChildItems>
+						<Table name="ДеревоРазбораИнформация" id="130">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоРазбораИнформация</DataPath>
+							<ContextMenu name="ДеревоРазбораИнформацияКонтекстноеМеню" id="131"/>
+							<AutoCommandBar name="ДеревоРазбораИнформацияКоманднаяПанель" id="132"/>
+							<ExtendedTooltip name="ДеревоРазбораИнформацияРасширеннаяПодсказка" id="133"/>
+							<SearchStringAddition name="ДеревоРазбораИнформацияСтрокаПоиска" id="134">
+								<AdditionSource>
+									<Item>ДеревоРазбораИнформация</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораИнформацияСтрокаПоискаКонтекстноеМеню" id="135"/>
+								<ExtendedTooltip name="ДеревоРазбораИнформацияСтрокаПоискаРасширеннаяПодсказка" id="136"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоРазбораИнформацияСостояниеПросмотра" id="137">
+								<AdditionSource>
+									<Item>ДеревоРазбораИнформация</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораИнформацияСостояниеПросмотраКонтекстноеМеню" id="138"/>
+								<ExtendedTooltip name="ДеревоРазбораИнформацияСостояниеПросмотраРасширеннаяПодсказка" id="139"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоРазбораИнформацияУправлениеПоиском" id="140">
+								<AdditionSource>
+									<Item>ДеревоРазбораИнформация</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоРазбораИнформацияУправлениеПоискомКонтекстноеМеню" id="141"/>
+								<ExtendedTooltip name="ДеревоРазбораИнформацияУправлениеПоискомРасширеннаяПодсказка" id="142"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоРазбораИнформацияВыбор</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ДеревоРазбораИнформацияОтметка" id="160">
+									<DataPath>ДеревоРазбораИнформация.Отметка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ThreeState>true</ThreeState>
+									<ContextMenu name="ДеревоРазбораИнформацияОтметкаКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ДеревоРазбораИнформацияОтметкаРасширеннаяПодсказка" id="162"/>
+									<Events>
+										<Event name="OnChange">ДеревоРазбораИнформацияОтметкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<ColumnGroup name="ИмяИнформация" id="149">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя информация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ИмяИнформацияРасширеннаяПодсказка" id="150"/>
+									<ChildItems>
+										<PictureField name="ДеревоРазбораИнформацияКартинка" id="154">
+											<DataPath>ДеревоРазбораИнформация.Картинка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Метаданные\Метод</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоРазбораИнформацияКартинкаКонтекстноеМеню" id="155"/>
+											<ExtendedTooltip name="ДеревоРазбораИнформацияКартинкаРасширеннаяПодсказка" id="156"/>
+										</PictureField>
+										<InputField name="ДеревоРазбораИнформацияИмя" id="151">
+											<DataPath>ДеревоРазбораИнформация.Имя</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДеревоРазбораИнформацияИмяКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="ДеревоРазбораИнформацияИмяРасширеннаяПодсказка" id="153"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоРазбораИнформацияАннотация" id="163">
+									<DataPath>ДеревоРазбораИнформация.Аннотация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоРазбораИнформацияАннотацияКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="ДеревоРазбораИнформацияАннотацияРасширеннаяПодсказка" id="165"/>
+								</InputField>
+								<InputField name="ДеревоРазбораИнформацияПроблема" id="157">
+									<DataPath>ДеревоРазбораИнформация.Проблема</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоРазбораИнформацияПроблемаКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ДеревоРазбораИнформацияПроблемаРасширеннаяПодсказка" id="159"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
-		<Table name="РезультатыРазбора" id="28">
-			<Representation>List</Representation>
-			<Visible>false</Visible>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>РезультатыРазбора</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="РезультатыРазбораКонтекстноеМеню" id="29"/>
-			<AutoCommandBar name="РезультатыРазбораКоманднаяПанель" id="30">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
-			<ExtendedTooltip name="РезультатыРазбораРасширеннаяПодсказка" id="31"/>
-			<SearchStringAddition name="РезультатыРазбораСтрокаПоиска" id="32">
-				<AdditionSource>
-					<Item>РезультатыРазбора</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="РезультатыРазбораСтрокаПоискаКонтекстноеМеню" id="33"/>
-				<ExtendedTooltip name="РезультатыРазбораСтрокаПоискаРасширеннаяПодсказка" id="34"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="РезультатыРазбораСостояниеПросмотра" id="35">
-				<AdditionSource>
-					<Item>РезультатыРазбора</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="РезультатыРазбораСостояниеПросмотраКонтекстноеМеню" id="36"/>
-				<ExtendedTooltip name="РезультатыРазбораСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="РезультатыРазбораУправлениеПоиском" id="38">
-				<AdditionSource>
-					<Item>РезультатыРазбора</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="РезультатыРазбораУправлениеПоискомКонтекстноеМеню" id="39"/>
-				<ExtendedTooltip name="РезультатыРазбораУправлениеПоискомРасширеннаяПодсказка" id="40"/>
-			</SearchControlAddition>
-			<ChildItems>
-				<InputField name="РезультатыРазбораФайлРасширения" id="41">
-					<DataPath>РезультатыРазбора.ФайлРасширения</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораФайлРасширенияКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="РезультатыРазбораФайлРасширенияРасширеннаяПодсказка" id="43"/>
-				</InputField>
-				<CheckBoxField name="РезультатыРазбораПоказатьНаФорме" id="59">
-					<DataPath>РезультатыРазбора.ПоказатьНаФорме</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="РезультатыРазбораПоказатьНаФормеКонтекстноеМеню" id="60"/>
-					<ExtendedTooltip name="РезультатыРазбораПоказатьНаФормеРасширеннаяПодсказка" id="61"/>
-				</CheckBoxField>
-				<InputField name="РезультатыРазбораРезультатСравненияМетодов" id="62">
-					<DataPath>РезультатыРазбора.РезультатСравненияМетодов</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораРезультатСравненияМетодовКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="РезультатыРазбораРезультатСравненияМетодовРасширеннаяПодсказка" id="64"/>
-				</InputField>
-				<InputField name="РезультатыРазбораДиректива" id="44">
-					<DataPath>РезультатыРазбора.Аннотация</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораДирективаКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="РезультатыРазбораДирективаРасширеннаяПодсказка" id="46"/>
-				</InputField>
-				<InputField name="РезультатыРазбораПереопределяемыйМетод" id="47">
-					<DataPath>РезультатыРазбора.ПереопределяемыйМетод</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораПереопределяемыйМетодКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="РезультатыРазбораПереопределяемыйМетодРасширеннаяПодсказка" id="49"/>
-				</InputField>
-				<InputField name="РезультатыРазбораНовыйМетод" id="50">
-					<DataPath>РезультатыРазбора.НовыйМетод</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораНовыйМетодКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="РезультатыРазбораНовыйМетодРасширеннаяПодсказка" id="52"/>
-				</InputField>
-				<CheckBoxField name="РезультатыРазбораПереопределенНаФорме" id="53">
-					<DataPath>РезультатыРазбора.ПереопределенНаФорме</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="РезультатыРазбораПереопределенНаФормеКонтекстноеМеню" id="54"/>
-					<ExtendedTooltip name="РезультатыРазбораПереопределенНаФормеРасширеннаяПодсказка" id="55"/>
-				</CheckBoxField>
-				<InputField name="РезультатыРазбораРеквизитФормы" id="56">
-					<DataPath>РезультатыРазбора.РеквизитФормы</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РезультатыРазбораРеквизитФормыКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="РезультатыРазбораРеквизитФормыРасширеннаяПодсказка" id="58"/>
-				</InputField>
-			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -771,11 +853,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ДеревоРазбора" id="9">
+		<Attribute name="ДеревоРазбораПроблемы" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дерево разбора</v8:content>
+					<v8:content>Дерево разбора проблемы</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -967,6 +1049,145 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоРазбораИнформация" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево разбора информация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Проблема" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проблема</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отметка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Аннотация" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аннотация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИДСтроки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИДСтроки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Авто" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авто</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоРазбораИнформацияКоличество" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево разбора информация количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоРазбораПроблемыКоличество" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево разбора проблемы количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
