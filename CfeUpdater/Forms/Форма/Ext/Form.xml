@@ -52,6 +52,48 @@
 					<CommandName>Form.StandardCommand.Help</CommandName>
 					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="167"/>
 				</Button>
+				<UsualGroup name="ГруппаОжидание" id="174">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ожидание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="175"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="168">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SkipOnInput>true</SkipOnInput>
+							<Picture>
+								<xr:Ref>CommonPicture.ОжидаемаяДлительнаяОперация16</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="169"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="170"/>
+						</PictureDecoration>
+						<LabelDecoration name="Декорация2" id="171">
+							<TextColor>style:BorderColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется копирование и анализ данных</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="172"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="173"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКолонки" id="23">
