@@ -294,6 +294,52 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаРезультат" id="179">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файлы расширения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файлы расширения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="180"/>
+							<ChildItems>
+								<InputField name="КаталогСРезультатами" id="176">
+									<DataPath>КаталогСРезультатами</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КаталогСРезультатамиКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="КаталогСРезультатамиРасширеннаяПодсказка" id="178"/>
+									<Events>
+										<Event name="OnChange">КаталогСРезультатамиПриИзменении</Event>
+										<Event name="StartChoice">КаталогСРезультатамиНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияКаталогСРезультатами" id="184">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>web:CornFlowerBlue</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Укажите пустой каталог</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<ContextMenu name="ДекорацияКаталогСРезультатамиКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="ДекорацияКаталогСРезультатамиРасширеннаяПодсказка" id="186"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -343,7 +389,9 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоРазбораПроблемы</DataPath>
 							<ContextMenu name="ДеревоРазбораПроблемыКонтекстноеМеню" id="69"/>
-							<AutoCommandBar name="ДеревоРазбораПроблемыКоманднаяПанель" id="70"/>
+							<AutoCommandBar name="ДеревоРазбораПроблемыКоманднаяПанель" id="70">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ДеревоРазбораПроблемыРасширеннаяПодсказка" id="71"/>
 							<SearchStringAddition name="ДеревоРазбораПроблемыСтрокаПоиска" id="72">
 								<AdditionSource>
@@ -482,7 +530,9 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоРазбораИнформация</DataPath>
 							<ContextMenu name="ДеревоРазбораИнформацияКонтекстноеМеню" id="131"/>
-							<AutoCommandBar name="ДеревоРазбораИнформацияКоманднаяПанель" id="132"/>
+							<AutoCommandBar name="ДеревоРазбораИнформацияКоманднаяПанель" id="132">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ДеревоРазбораИнформацияРасширеннаяПодсказка" id="133"/>
 							<SearchStringAddition name="ДеревоРазбораИнформацияСтрокаПоиска" id="134">
 								<AdditionSource>
@@ -1071,17 +1121,6 @@
 				<Field>ОписаниеФайлыРасширения</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ПрограммаСравненияЗапущена" id="16">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Программа сравнения запущена</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="БылаОшибкаПриЗапускеГит" id="5">
 			<Title>
 				<v8:item>
@@ -1231,6 +1270,25 @@
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="КаталогСРезультатами" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог с результатами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>КаталогСРезультатами</Field>
+			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
