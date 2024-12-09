@@ -388,9 +388,34 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоРазбораПроблемы</DataPath>
-							<ContextMenu name="ДеревоРазбораПроблемыКонтекстноеМеню" id="69"/>
+							<ContextMenu name="ДеревоРазбораПроблемыКонтекстноеМеню" id="69">
+								<ChildItems>
+									<Button name="ДеревоРазбораПроблемыКонтекстноеМенюОбъединить" id="187">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Объединить</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораПроблемыКонтекстноеМенюОбъединитьРасширеннаяПодсказка" id="188"/>
+									</Button>
+									<Button name="ДеревоРазбораПроблемыКонтекстноеМенюПоказатьРезультатОбъединения" id="189">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьРезультатОбъединения</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораПроблемыКонтекстноеМенюПоказатьРезультатОбъединенияРасширеннаяПодсказка" id="190"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ДеревоРазбораПроблемыКоманднаяПанель" id="70">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоРазбораПроблемыОбъединить" id="191">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Объединить</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораПроблемыОбъединитьРасширеннаяПодсказка" id="192"/>
+									</Button>
+									<Button name="ДеревоРазбораПроблемыПоказатьРезультатОбъединения" id="193">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьРезультатОбъединения</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораПроблемыПоказатьРезультатОбъединенияРасширеннаяПодсказка" id="194"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ДеревоРазбораПроблемыРасширеннаяПодсказка" id="71"/>
 							<SearchStringAddition name="ДеревоРазбораПроблемыСтрокаПоиска" id="72">
@@ -1383,6 +1408,46 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="Объединить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объединить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объединить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ТипСоставнойДополнительный</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Объединить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоказатьРезультатОбъединения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать результат объединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать результат объединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьРезультатОбъединения</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
