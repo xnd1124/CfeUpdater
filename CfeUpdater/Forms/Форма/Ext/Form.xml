@@ -444,6 +444,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">ДеревоРазбораПроблемыВыбор</Event>
+								<Event name="OnActivateRow">ДеревоРазбораПроблемыПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
 								<CheckBoxField name="ДеревоРазбораОтметка" id="92">
@@ -554,9 +555,24 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>ДеревоРазбораИнформация</DataPath>
-							<ContextMenu name="ДеревоРазбораИнформацияКонтекстноеМеню" id="131"/>
+							<ContextMenu name="ДеревоРазбораИнформацияКонтекстноеМеню" id="131">
+								<ChildItems>
+									<Button name="ДеревоРазбораИнформацияКонтекстноеМенюПоказатьОтличия" id="197">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьОтличия</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораИнформацияКонтекстноеМенюПоказатьОтличияРасширеннаяПодсказка" id="198"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ДеревоРазбораИнформацияКоманднаяПанель" id="132">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоРазбораИнформацияПоказатьОтличия" id="195">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьОтличия</CommandName>
+										<ExtendedTooltip name="ДеревоРазбораИнформацияПоказатьОтличияРасширеннаяПодсказка" id="196"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ДеревоРазбораИнформацияРасширеннаяПодсказка" id="133"/>
 							<SearchStringAddition name="ДеревоРазбораИнформацияСтрокаПоиска" id="134">
@@ -585,6 +601,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">ДеревоРазбораИнформацияВыбор</Event>
+								<Event name="OnActivateRow">ДеревоРазбораИнформацияПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
 								<CheckBoxField name="ДеревоРазбораИнформацияОтметка" id="160">
@@ -1447,6 +1464,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПоказатьРезультатОбъединения</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоказатьОтличия" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отличия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать отличия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьОтличия</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
