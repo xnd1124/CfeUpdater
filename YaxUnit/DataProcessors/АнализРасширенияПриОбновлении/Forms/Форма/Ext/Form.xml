@@ -345,6 +345,7 @@
 					<v8:content>Закладки формы</v8:content>
 				</v8:item>
 			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ЗакладкиФормыРасширеннаяПодсказка" id="125"/>
 			<ChildItems>
 				<Page name="Проблемы" id="126">
