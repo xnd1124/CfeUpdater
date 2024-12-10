@@ -70,6 +70,10 @@
 						<PictureDecoration name="Декорация1" id="168">
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<SkipOnInput>true</SkipOnInput>
+							<Picture>
+								<xr:Ref>CommonPicture.ОжидаемаяДлительнаяОперация16</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="169"/>
 							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="170"/>
 						</PictureDecoration>
