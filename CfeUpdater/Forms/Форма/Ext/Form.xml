@@ -9,6 +9,7 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаКнопки" id="17">
@@ -25,7 +26,6 @@
 				</v8:item>
 			</ToolTip>
 			<VerticalAlign>Center</VerticalAlign>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="18"/>
@@ -40,10 +40,6 @@
 					<Type>UsualButton</Type>
 					<Representation>PictureAndText</Representation>
 					<CommandName>Form.Command.Настройки</CommandName>
-					<Picture>
-						<xr:Ref>CommonPicture._ДемоРазделИнструментыРазработчика</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</Picture>
 					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="123"/>
 				</Button>
 				<Button name="Справка" id="166">
@@ -74,10 +70,6 @@
 						<PictureDecoration name="Декорация1" id="168">
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<SkipOnInput>true</SkipOnInput>
-							<Picture>
-								<xr:Ref>CommonPicture.ОжидаемаяДлительнаяОперация16</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="169"/>
 							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="170"/>
 						</PictureDecoration>
@@ -110,7 +102,6 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="24"/>
@@ -129,7 +120,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="20"/>
@@ -243,7 +233,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="22"/>
@@ -680,12 +669,6 @@
 				<v8:Type>cfg:ExternalDataProcessorObject.АнализРасширенияПриОбновлении</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
-			<Save>
-				<Field>Объект.ПрограммаПросмотраИзменений</Field>
-				<Field>Объект.ПутьДоKDiff3</Field>
-				<Field>Объект.ПутьДоP4Merge</Field>
-				<Field>Объект.ПутьКGitMerge</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ФайлыРасширения" id="2">
 			<Title>
@@ -702,9 +685,6 @@
 				</v8:StringQualifiers>
 			</Type>
 			<FillCheck>ShowError</FillCheck>
-			<Save>
-				<Field>ФайлыРасширения</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ФайлыОбновляемойКонфигурации" id="3">
 			<Title>
@@ -721,9 +701,6 @@
 				</v8:StringQualifiers>
 			</Type>
 			<FillCheck>ShowError</FillCheck>
-			<Save>
-				<Field>ФайлыОбновляемойКонфигурации</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ФайлыНовойКонфигурации" id="4">
 			<Title>
@@ -740,9 +717,6 @@
 				</v8:StringQualifiers>
 			</Type>
 			<FillCheck>ShowError</FillCheck>
-			<Save>
-				<Field>ФайлыНовойКонфигурации</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="РезультатыРазбора" id="6">
 			<Title>
@@ -1138,9 +1112,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>ОписаниеФайлыОбновляемойКонфигурации</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ОписаниеФайлыНовойКонфигурации" id="14">
 			<Title>
@@ -1156,9 +1127,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>ОписаниеФайлыНовойКонфигурации</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ОписаниеФайлыРасширения" id="15">
 			<Title>
@@ -1174,9 +1142,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>ОписаниеФайлыРасширения</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="БылаОшибкаПриЗапускеГит" id="5">
 			<Title>
@@ -1343,9 +1308,6 @@
 				</v8:StringQualifiers>
 			</Type>
 			<FillCheck>ShowError</FillCheck>
-			<Save>
-				<Field>КаталогСРезультатами</Field>
-			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -1439,10 +1401,6 @@
 					<v8:content>Объединить</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Picture>
-				<xr:Ref>CommonPicture.ТипСоставнойДополнительный</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
 			<Action>Объединить</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
@@ -1487,4 +1445,18 @@
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ЗапуститьАнализПриОткрытии">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ИспользоватьМодальныйРежим">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
 </Form>

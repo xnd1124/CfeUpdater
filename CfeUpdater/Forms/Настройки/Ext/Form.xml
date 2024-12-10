@@ -50,7 +50,6 @@
 				<LabelDecoration name="ПодсказкаПросмотр" id="15">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>120</MaxWidth>
-					<TextColor>style:ПоясняющийТекст</TextColor>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -135,7 +134,6 @@
 						<LabelDecoration name="ПутьКорректен" id="22">
 							<Visible>false</Visible>
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<TextColor>style:МоиВариантыОтчетовЦвет</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -174,7 +172,6 @@
 				<LabelDecoration name="ПодсказкаGit" id="10">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>120</MaxWidth>
-					<TextColor>style:ПоясняющийТекст</TextColor>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -239,7 +236,6 @@
 						</LabelDecoration>
 						<LabelDecoration name="ФайлНайден" id="33">
 							<Visible>false</Visible>
-							<TextColor>style:ГруппаВариантовОтчетовЦвет</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>

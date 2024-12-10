@@ -59,7 +59,6 @@
 				</InputField>
 				<LabelDecoration name="ФайлНайден" id="16">
 					<Visible>false</Visible>
-					<TextColor>style:ГруппаВариантовОтчетовЦвет</TextColor>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
