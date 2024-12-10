@@ -1,0 +1,24 @@
+{
+  "reportPath": "D:\\1C\\CfeUpdater\\Tests\\result.xml",
+  "closeAfterTests": true,
+  "filter": {
+    "extensions": [
+      "YAXUNIT"
+    ]
+  },
+  "settings": {
+    "ВТранзакции": false
+  },
+  "reportFormat": "jUnit",
+  "showReport": true,
+  "logging": {
+    "file": "",
+    "console": false,
+    "enable": null,
+    "level": "debug"
+  },
+  "exitCode": "",
+  "projectPath": "",
+  "ДымовыеТесты": false,
+  "ПодключатьВнешниеКомпоненты": true
+}
