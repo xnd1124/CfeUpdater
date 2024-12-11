@@ -401,6 +401,10 @@
 									<Button name="ДеревоРазбораПроблемыОбъединить" id="191">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Объединить</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ТипСоставнойДополнительный</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
 										<ExtendedTooltip name="ДеревоРазбораПроблемыОбъединитьРасширеннаяПодсказка" id="192"/>
 									</Button>
 									<Button name="ДеревоРазбораПроблемыПоказатьРезультатОбъединения" id="193">
