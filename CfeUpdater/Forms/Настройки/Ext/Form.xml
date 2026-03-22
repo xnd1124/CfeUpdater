@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -146,104 +146,6 @@
 							<Events>
 								<Event name="Click">ПутьКПрограммеНажатие</Event>
 							</Events>
-						</LabelDecoration>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаGit" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа git</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа git</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаGitРасширеннаяПодсказка" id="14"/>
-			<ChildItems>
-				<LabelDecoration name="ПодсказкаGit" id="10">
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>120</MaxWidth>
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>При наличии изменений в одном и том же методе необходимо проверить, возможно ли решение конфликтов автоматически, для этого используется команда git merge-file. 
-Укажите расположение файла  git.exe (Необязательно - при отсутвии git все конфликты решаются вручную, при помощи программы работы с текстами)
-</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ПодсказкаGitКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ПодсказкаGitРасширеннаяПодсказка" id="12"/>
-				</LabelDecoration>
-				<UsualGroup name="ГруппаПутьКGit" id="28">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа путь к git</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа путь к git</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>AlwaysHorizontal</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПутьКGitРасширеннаяПодсказка" id="29"/>
-					<ChildItems>
-						<InputField name="ПутьКGitMerge" id="7">
-							<DataPath>Объект.ПутьКGitMerge</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>При наличии изменений в одном и том же методе необходимо проверить, возможно ли решение конфликтов автоматически, для этого используется команда git merge-file. Укажите расположение файла  git.exe </v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>None</ToolTipRepresentation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>120</MaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ChoiceButton>true</ChoiceButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПутьКGitMergeКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ПутьКGitMergeРасширеннаяПодсказка" id="9"/>
-							<Events>
-								<Event name="OnChange">ПутьКGitMergeПриИзменении</Event>
-								<Event name="StartChoice">ПутьКGitMergeНачалоВыбора</Event>
-							</Events>
-						</InputField>
-						<LabelDecoration name="ФайлОтсутсвует" id="30">
-							<TextColor>style:SpecialTextColor</TextColor>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Файл отсутсвует</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ФайлОтсутсвуетКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="ФайлОтсутсвуетРасширеннаяПодсказка" id="32"/>
-						</LabelDecoration>
-						<LabelDecoration name="ФайлНайден" id="33">
-							<Visible>false</Visible>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Файл найден</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ФайлНайденКонтекстноеМеню" id="34"/>
-							<ExtendedTooltip name="ФайлНайденРасширеннаяПодсказка" id="35"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
