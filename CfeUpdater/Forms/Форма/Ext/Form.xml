@@ -39,16 +39,24 @@
 				</Button>
 				<Button name="Настройки" id="122">
 					<Type>UsualButton</Type>
-					<Representation>PictureAndText</Representation>
+					<Representation>Text</Representation>
 					<CommandName>Form.Command.Настройки</CommandName>
 					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="123"/>
 				</Button>
-				<Button name="Справка" id="166">
-					<Type>UsualButton</Type>
-					<Representation>PictureAndText</Representation>
-					<CommandName>Form.StandardCommand.Help</CommandName>
-					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="167"/>
-				</Button>
+				<LabelDecoration name="Декорация3" id="199">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание на GitHub</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="200"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="201"/>
+					<Events>
+						<Event name="Click">Декорация3Нажатие</Event>
+					</Events>
+				</LabelDecoration>
 				<UsualGroup name="ГруппаОжидание" id="174">
 					<Visible>false</Visible>
 					<Title>
