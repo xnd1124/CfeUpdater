@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Report uuid="7d108955-3ffb-45d4-ba9f-97f7b9cdd6b9">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject._ДемоДинамикаИзмененийФайлов" category="Object">
+				<xr:TypeId>5fe2eda8-d529-4936-94cf-902a4961c0bc</xr:TypeId>
+				<xr:ValueId>834954c7-8669-4b64-9288-bba41e569e3a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager._ДемоДинамикаИзмененийФайлов" category="Manager">
+				<xr:TypeId>1533dc87-f80b-4aad-a2a8-d948481f214e</xr:TypeId>
+				<xr:ValueId>622020fd-7adf-4303-8f3e-3efdad3e9766</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоДинамикаИзмененийФайлов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ec972e38-550f-442c-b7d2-384846228d2f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>
